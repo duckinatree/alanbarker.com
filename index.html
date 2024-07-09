@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Decentralized Audio Recording</title>
+<meta name="referrer" content="same-origin">
+<meta name="viewport" content="width=960">
+<style>html,body{-webkit-text-zoom:reset !important;-ms-text-size-adjust:none !important;-moz-text-size-adjust:none !important;-webkit-text-size-adjust:none !important}body>div{font-size:0}p, span,h1,h2,h3,h4,h5,h6{margin:0;word-spacing:normal;word-wrap:break-word;-ms-word-wrap:break-word;pointer-events:auto;max-height:1000000000px}sup{font-size:inherit;vertical-align:baseline;position:relative;top:-0.4em}sub{font-size:inherit;vertical-align:baseline;position:relative;top:0.4em}ul{display:block;word-spacing:normal;word-wrap:break-word;list-style-type:none;padding:0;margin:0;-moz-padding-start:0;-khtml-padding-start:0;-webkit-padding-start:0;-o-padding-start:0;-padding-start:0;-webkit-margin-before:0;-webkit-margin-after:0}li{display:block;white-space:normal}li p{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none}form{display:inline-block}a{text-decoration:inherit;color:inherit;-webkit-tap-highlight-color:rgba(0,0,0,0)}textarea{resize:none}.shm-l{float:left;clear:left}.shm-r{float:right;clear:right}.whitespacefix{word-spacing:-1px}html{font-family:sans-serif}body{font-size:0;margin:0}audio,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:0 0;outline:0}b,strong{font-weight:700}dfn{font-style:italic}h1,h2,h3,h4,h5,h6{font-size:1em;line-height:1;margin:0}img{border:0}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=submit]{-webkit-appearance:button;cursor:pointer;box-sizing:border-box;white-space:normal}input[type=text],input[type=password],textarea{-webkit-appearance:none;appearance:none;box-sizing:border-box}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}textarea{overflow:auto;box-sizing:border-box;border-color:#ddd}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}blockquote{margin-block-start:0;margin-block-end:0;margin-inline-start:0;margin-inline-end:0}:-webkit-full-screen-ancestor:not(iframe){-webkit-clip-path:initial!important}
+html{-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale}#b{background-color:#fff}.ps1{position:relative;margin-top:0}.v1{display:block;*display:block;zoom:1;vertical-align:top}.s1{pointer-events:none;min-width:960px;width:960px;margin-left:auto;margin-right:auto;min-height:2918px}.v2{display:inline-block;*display:inline;zoom:1;vertical-align:top}.ps2{position:relative;margin-left:86px;margin-top:0}.s2{min-width:790px;width:790px;min-height:2918px}.ps3{position:relative;margin-left:0;margin-top:0}.w1{line-height:0}.ps4{position:relative;margin-left:44px;margin-top:0}.s3{min-width:702px;width:702px;min-height:2553px}.c3{z-index:1;border:0;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;background-color:#fff;background-clip:padding-box}.ps5{position:relative;margin-left:39px;margin-top:35px}.s4{min-width:624px;width:624px;min-height:43px}.c4{z-index:2;pointer-events:auto;overflow:hidden;height:43px}.p1{padding-top:0;text-indent:0;padding-bottom:0;padding-right:0;text-align:center}.f1{font-family:Arial, Helvetica, sans-serif;font-size:30px;font-weight:400;font-style:normal;text-decoration:none;text-transform:none;color:#584d4d;background-color:initial;line-height:42px;letter-spacing:normal;text-shadow:none}.ps6{position:relative;margin-left:35px;margin-top:0}.s5{min-width:632px;width:632px;min-height:3px;height:3px}.c5{z-index:3;pointer-events:auto}.i1{position:absolute;left:0;width:632px;height:1px;top:1px;border:0}.i2{width:100%;height:100%;display:inline-block;-webkit-transform:translate3d(0,0,0)}.ps7{position:relative;margin-left:0;margin-top:-2421px}.s6{min-width:790px;width:790px;min-height:2786px}.c6{z-index:4;pointer-events:auto;overflow:hidden;height:2786px}.p2{padding-top:0;text-indent:0;padding-bottom:0;padding-right:0;text-align:left}.f2{font-family:Verdana, Geneva, sans-serif;font-size:12px;font-weight:700;font-style:normal;text-decoration:none;text-transform:none;color:#000;background-color:initial;line-height:21px;letter-spacing:normal;text-shadow:none}.f3{font-family:Verdana, Geneva, sans-serif;font-size:12px;font-weight:400;font-style:normal;text-decoration:none;text-transform:none;color:#000;background-color:initial;line-height:21px;letter-spacing:normal;text-shadow:none}.f4{font-family:Verdana, Geneva, sans-serif;font-size:12px;font-weight:400;font-style:normal;text-decoration:underline;text-transform:none;color:#000;background-color:initial;line-height:21px;letter-spacing:normal;text-shadow:none}</style>
+<link onload="this.media='all';this.onload=null;" rel="stylesheet" href="css/site.f780ee.css" media="print">
+</head>
+<body id="b">
+<div class="ps1 v1 s1">
+<div class="v2 ps2 s2 c2">
+<div class="v2 ps3 s2 w1">
+<div class="v2 ps4 s3 c3">
+<div class="v2 ps5 s4 c4">
+<p class="p1 f1">Decentralized Audio Recording</p>
+</div>
+<hr>
+</div>
+<div class="v2 ps7 s6 c6">
+<p class="p2 f2">Decentralized Multi-track Recording</p>
+<p class="p2 f2"><br></p>
+<p class="p2 f2">The Conventional Way</p>
+<p class="p2 f3">These are observations of evolving technologies that add up to a simpler way of capturing high quality sound with less equipment, less personnel and less frustration.  We are sliding into this way of working without giving it a name or realizing its implications. It’s best suited for small-crew documentary work in my opinion.</p>
+<p class="p2 f3"><br></p>
+<p class="p2 f3">The conventional approach to doing documentary sound is to have an array of wireless body microphones and a boom microphone that cover the subjects.  The audio signals are relayed either by cables or wireless transmission to a central multi-track mixing/recording device operated by a technician.  The sound is recorded both on isolated (iso) tracks and a two-channel mix that is either used as finished sound or as a reference in editing.  Hopefully, toward the end of post production a more controlled mix will be done from the isolated tracks.  This is centralized audio recording.  The sound is recorded on one device and an operator for that device is presumed.</p>
+<p class="p2 f3"><br></p>
+<p class="p2 f3">What if subjects were mic’d with body recorders smaller than a typical wireless transmitter?  What if the boom mic were recorded at the boom?  Then all the tracks from those devices would be synchronized at once in software.  </p>
+<p class="p2 f3"><br></p>
+<p class="p2 f3">After some unfortunate experiences with Pluraleyes I think it best to slate takes and sync manually or use time code as a backup.  An effective $2.00 ‘slate’ is a dog training clicker.  The click is precise and penetrating and will reach quite a distance.  Since there is audio in the camera there is no need for a visual slate to sync up.  Tip: make the clicks easier to find by saying, ‘Barker’…sorry, ‘Marker’ before each slate.  I advise not using this technique when filming dog shows.</p>
+<p class="p2 f3"><br></p>
+<p class="p2 f2">Game Changers</p>
+<p class="p2 f3">Body recorders have been around a while but some game changing developments are: wireless control by smartphone App, the 32 bit floating point audio format and synchronizing software.  The smartphone Apps allow remotely rolling, cutting, function monitoring and if needed level setting, track configuration, low cut, etc.  The 32bit audio format does away with the need to set levels. </p>
+<p class="p2 f3"><br></p>
+<p class="p2 f3">The 32bit Track E by Tentacle Sync and similar devices will revolutionize body recorders.  With “32bit float” no level settings are necessary.  There is a level setting but it’s for convenience in editing.  If 32bit audio is above or below the waveform range of your editing timeline it can be tamed with the “normalize” function in your editing software.  All you need to remember is to roll and cut.  As of November 2021 there are other devices with similar features but they don’t compete with the Tentacle Track E.</p>
+<p class="p2 f3"><br></p>
+<p class="p2 f3">Unlike wireless microphones, distance from the camera does not affect body recorders.  The App may lose Bluetooth contact but the recording will continue.  One nightmare for sound people is when the subjects get in a car and there is no room for sound.  The sound person has to leave their rig running in the car hoping the camera person doesn’t mangle it squirming around to get a shot.  With body recorders there is no rig, possibly no sound person.  </p>
+<p class="p2 f3"><br></p>
+<p class="p2 f2">Pre-interviews Made Usable</p>
+<p class="p2 f3">As a director you could have a body recorder along for pre-interviews then do the formal interview with the same device.  The sound will match provided the acoustics and background noise are similar.  </p>
+<p class="p2 f3"><br></p>
+<p class="p2 f3"><br></p>
+<p class="p2 f2">The Boom Mike</p>
+<p class="p2 f3">At present (November 2021) there is no 32bit option for boom mics short of a $650+ mixer/recorder or adapting a body recorder.  But do you need 32bit sound for the boom?  A boom mic entails a person.  A “boom person” can and should monitor their sound both for quality and content.  </p>
+<p class="p2 f3"><br></p>
+<p class="p2 f3">The Deity HD-TX is a solid $250 plug-on recorder that has more options than many professional mixer/recorders and is easy to use.  It can be plugged directly into a hand-held mic or the end of a wired boom pole. You can change the gain setting with direct button pushes while recording   In addition to a variable low cut (high pass) filter, the HD-TX has a variable presence boost, something I have never seen in a field recorder.  It boosts frequencies around 4000Hz which improves the clarity of speech. This is a particular advantage when recording voices muffled by PPE masks.  The operator can monitor while recording via a mini plug output.  The HD-TX also transmits to a Deity receiver but that function is not needed in my opinion.</p>
+<p class="p2 f3"><br></p>
+<p class="p2 f2">The Virtual Multitrack Recorder</p>
+<p class="p2 f3">An array of body and microphone recorders is a virtual multi-iso-track recorder that can be operated from a distance.  This virtual recorder is scalable; you might have four tracks today covering two people (the two tracks on your camera are part of this virtual multi-track) or 12 tracks tomorrow covering a board meeting.  There is no mix, only the iso tracks so it’s up to the editor to decide which tracks to listen to.  That should not be a problem as the tracks can be named prior to recording.  None of this requires great technical expertise.  A solo shooter could work with any number of sound sources.</p>
+<p class="p2 f3"><br></p>
+<p class="p2 f2">Camera Sound</p>
+<p class="p2 f3">The two camera tracks are part of this virtual multi-track recorder.   In brief, the Rode VideoMic NTG has a number of important innovations including the presence boost mentioned here.  The Deity V-Mic D4 DUO is a two-channel device that has front and rear capsules for picking up both in front of and behind the camera, or alternately an input for an external source.  The Rode WirelessGo is a simple option for mic’ing the cameraperson or an interviewer but don’t count on it as a long-range wireless mic.  The gain and output need to be set.  The WirelessGo II allows two transmitters that also record but the recording protocol is awkward.</p>
+<p class="p2 f3"><br></p>
+<p class="p2 f2">The Downside: No monitoring while recording  in the U.S.</p>
+<p class="p2 f3">There is a downside to this technology in the U.S. but it can be worked around.  You can’t monitor the sound of a body recorder while in record mode.  In the U.S. anything that resembles a body recorder can’t be transmitted to another recorder or monitoring device <span class="f4">while recording</span> due to a questionable patent owned by Zaxcom.  The Zaxcom patent has stymied the development of this technology in the U.S..  You can monitor before and after rolling on some systems via Bluetooth.  International versions of body and plug-in recorders do not have this limitation.  Some manufacturers now have licensing arrangements with Zaxcom or have found workarounds.  Tentacle Sync has announced an upcoming firmware revision that may resolve this issue for the Track E recorder.</p>
+<p class="p2 f3"><br></p>
+<p class="p2 f2">Two Reasons For Monitoring</p>
+<p class="p2 f3">There are two main reasons for monitoring: content and quality.  Having worked on many dozens of vérité-style shoots I can think of few where monitoring for content was necessary because the director is usually within earshot of the principal subjects.  In vérité filmmaking the case can be made that the filmmakers, including the director, should be the crew.  On the other hand there were some hidden microphone and surveillance shoots where monitoring for content was necessary.  There are directors who eavesdrop on and record subjects and those around them who have forgotten the mic or don’t know it’s present.  That’s illegal in some situations and questionable in nearly all. If monitoring for content is essential, a traditional wireless mic can used on the principal subject and transmitted directly to the camera. </p>
+<p class="p2 f3"><br></p>
+<p class="p2 f3">Monitoring for quality is another issue.  I doubt that anyone who has taken a film course has not had it drummed into them that you must monitor your sound.  Why?  Because it might not be there or it might be screwed up.  </p>
+<p class="p2 f3"><br></p>
+<p class="p2 f3">What are chances that the sound is bad using a wireless microphone vs. a smartphone-controlled 32bit float body recorder?  A wireless microphone can fail in many ways: A transmitter that’s out of range, dead batteries in either the transmitter or the receiver, a faulty cable between the receiver and the recording device, radio interference or intermodulation (growing problems due to increasing frequency restrictions and crowding), incorrect setup of transmitter gain or receiver output level (common user errors).  Using a body recorder such as the 32bit Track E none of those problems exist.  Failure to roll or a low battery will be evident on the App.</p>
+<p class="p2 f3"><br></p>
+<p class="p2 f3">What’s left are clothing and wind noise.  This is where craft comes in.  If you learn how to mount your mics well these problems will be rare.  You should master that craft whether working with a body recorder or a standard wireless mic.  When wind and contact noise problems arise in a real-life situation, it’s usually too late to fix them without stopping the activity being filmed.</p>
+<p class="p2 f3"><br></p>
+<p class="p2 f2">The Technician Problem</p>
+<p class="p2 f3">Unfortunately, sound people are now mostly hired locally and do not travel with productions.  Quality and standards can vary greatly.  Involvement with the subject matter may be nil which is understandable as sound people are now rarely considered creative team members.  With delicate subject matter having a disinterested technician standing over people and fumbling with their clothing may do social damage that outweighs the technical contribution. </p>
+<p class="p2 f3"><br></p>
+<p class="p2 f3">You can’t blame a hired sound technician for looking like a poorly disguised suicide bomber.  They have to show up with all possibly needed gear and they have to carry it in order to be professional and somewhat mobile.  Their presentation as a technician is why they were hired.  It’s my feeling that documentarians need to be present as people first and technicians second, if at all.  </p>
+<p class="p2 f3"><br></p>
+<p class="p2 f2">COVID-19</p>
+<p class="p2 f3">Body and microphone/recorders have come along at the right moment for dealing with COVID-19.  There are no long cables that are easily contaminated and a nuisance to sanitize. Except for a boom mic, all the equipment will fit in a fanny pack.  They are small, have minimal surface area and are easy to sanitize.  The presence boost feature on the Deity HD-TX sharpens PPE muffled speech.  Only the necessary items need be brought out in a given location. The equipment package is reduced. Crew size can be reduced.</p>
+<p class="p2 f3"><br></p>
+<p class="p2 f3">This is a paradigm shift in the way we record sound that particularly suits small-crew, first-person, present-tense documentary filmmaking.  It crept up on us.  Many of us especially solo shooters are doing parts of it already and some are fully into it.  It may or may not catch on this time.  </p>
+<p class="p2 f3"><br></p>
+<p class="p2 f3">Disclaimer: I receive no compensation from any manufacturer or marketer of the equipment mentioned in this piece.</p>
+<p class="p2 f3"><br></p>
+<p class="p2 f2">Alan Barker</p>
+<p class="p2 f3">November 2021</p>
+</div>
+</div>
+</div>
+</div>
+<div class="c1">
+</div>
+<script>dpth="/";!function(){var s=["js/jquery.e5b21a.js","js/index.f780ee.js"],n={},j=0,e=function(e){var o=new XMLHttpRequest;o.open("GET",s[e],!0),o.onload=function(){if(n[e]=o.responseText,2==++j)for(var t in s){var i=document.createElement("script");i.textContent=n[t],document.body.appendChild(i)}},o.send()};for(var o in s)e(o)}();
+</script>
+<script type="text/javascript">
+var ver=RegExp(/Mozilla\/5\.0 \(Linux; .; Android ([\d.]+)/).exec(navigator.userAgent);if(ver&&parseFloat(ver[1])<5){document.getElementsByTagName('body')[0].className+=' whitespacefix';}
+</script>
+</body>
+</html>
